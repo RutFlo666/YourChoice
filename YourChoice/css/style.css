@@ -1,0 +1,130 @@
+:root {
+  --primary: #5a185a;     /* светло-фиолетовый */
+  --accent: #dfaf14;      /* золотой */
+  --background: #c999bd;  /* белый */
+  --text: #333333;        /* тёмно-серый текст */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  font-size: 90%;
+  color: var(--text);
+  background-color: var(--background);
+  text-align: center;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
+}
+
+.header {
+  background-color: var(--primary);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(42, 12, 48);
+}
+
+.nav a {
+  margin: 0 10px;
+  font-weight: bold;
+  color: rgb(80, 6, 73);
+}
+.nav a:hover {
+  color: var(--accent);
+}
+
+.wrapper {
+  width: 960px;
+  margin: 120px auto 50px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(200, 162, 200, 0.2);
+  text-align: left;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+h1, h2 {
+  color: var(--accent);
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 200%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 140%;
+  margin-top: 30px;
+}
+
+.intro {
+  font-size: 90%;
+  line-height: 1.4em;
+  color: var(--text);
+}
+
+.date {
+  font-size: 80%;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: var(--primary);
+  padding: 10px;
+  text-align: right;
+  font-size: 75%;
+  color: white;
+}
+
+.footer a {
+  color: white;
+}
+
+img {
+  border-radius: 4px;
+  margin: 5px;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 300px;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--primary);
+  color: white;
+}
